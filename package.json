@@ -1,0 +1,38 @@
+{
+    "name": "k6-jslib-totp",
+    "repository": "https://github.com/grafana/k6-jslib-totp",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "devDependencies": {
+        "@babel/core": "7.28.5",
+        "@babel/plugin-transform-block-scoping": "7.28.5",
+        "@babel/preset-env": "7.28.5",
+        "@types/k6": "0.52.0",
+        "@types/webpack": "5.28.0",
+        "babel-loader": "8.4.1",
+        "clean-webpack-plugin": "4.0.0",
+        "husky": "9.1.7",
+        "lint-staged": "12.5.0",
+        "prettier": "2.6.2",
+        "terser-webpack-plugin": "5.3.15",
+        "ts-loader": "9.5.1",
+        "webpack": "5.103.0",
+        "webpack-cli": "4.9.2",
+        "webpack-glob-entries": "1.0.1"
+    },
+    "engines": {},
+    "scripts": {
+        "webpack": "webpack",
+        "test": "k6 run tests/",
+        "prepare": "husky"
+    },
+    "keywords": [
+        "k6",
+        "totp"
+    ],
+    "author": "k6 team",
+    "license": "Apache-2.0",
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    }
+}
